@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>book</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+    input[type=search] 
+    {
+       background-color: #bff3e0;
+       color: rgb(0,0,0);
+    }
+    .rcorners2  
+    {
+       border-radius: 15px 50px 30px;
+       background: #6c757d;
+       padding: 20px; 
+       width: 500px;
+       height: 50px; 
+    }
+    .jumbotron {
+    background-image: url(tourism1.jpg);
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 300px;
+    }
+    .search{
+    /* background-image: url(search.jpg); */
+    /* text-align: center; */
+    padding-bottom: 150px;
+    padding-top: 150px;
+    }
+
+    #email {
+    width: 300px;
+    }
+    #appSummary {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+    }
+    /* .card-img-top {
+    width: 100%;
+    } */
+    #appStoreIcon {
+    width: 200px;
+    }
+    #footer {
+    background-color: aqua;
+    padding-top: 150px;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 150px;
+    }
+    body {
+    position: relative;
+    }
+    .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    }
+    .cardSpacing{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    }
+    .quote{
+       padding-top: 40vh;
+       padding-bottom: 10vh;
+    }
+    .searchButton{
+       margin-left: 95vh;
+       margin-right: 50vh;
+    }
+    .background-color{
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,7db9e8+0,7db9e8+0,7db9e8+0,1e5799+0,7db9e8+51,7db9e8+62,7db9e8+99,7db9e8+99 */
+       background: rgb(30,87,153); /* Old browsers */
+       background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 0%, rgba(125,185,232,1) 0%, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 51%, rgba(125,185,232,1) 62%, rgba(125,185,232,1) 99%, rgba(125,185,232,1) 99%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 62%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 99%); /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 62%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .background-color1{
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,1e5799+0,7db9e8+0,7db9e8+0,7db9e8+0,1e5799+0,7db9e8+51,7db9e8+62,7db9e8+99,7db9e8+99 */
+       background: rgb(30,87,153); /* Old browsers */
+       background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 0%, rgba(125,185,232,1) 0%, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 51%, rgba(125,185,232,1) 62%, rgba(125,185,232,1) 99%, rgba(125,185,232,1) 99%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(left,  rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 62%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 99%); /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(to right,  rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(125,185,232,1) 0%,rgba(30,87,153,1) 0%,rgba(125,185,232,1) 51%,rgba(125,185,232,1) 62%,rgba(125,185,232,1) 99%,rgba(125,185,232,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+    }
+
+    .container{
+       max-width: 500px;
+    }
+    
+ </style>
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<!-- <section class="header">
+
+   <a href="home.php" class="logo">travel.</a>
+
+   <nav class="navbar">
+      <a href="home.php">home</a>
+      <a href="about.php">about</a>
+      <a href="package.php">package</a>
+      <a href="book.php">book</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section> -->
+
+<nav class="navbar navbar-light bg-faded navbar-fixed-top background-color1" id="navbar">
+    <a class="navbar-brand" href="#">Tourism Guide</a>
+    <ul class="nav navbar-nav">
+       <li class="nav-item">
+          <a class="nav-link" href="TourismGuide.html">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="CurrencyConvertor.html">Currency Convertor</a>
+       </li>
+       
+       <li class="nav-item">
+          <a class="nav-link" href="EmergencyServices.html">Emergengy Contact</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="book.html">Booking</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="Language Convertor.html">Language Convertor</a>
+       </li>
+    </ul>
+    <form class="form-inline pull-xs-right">
+       <a class="btn btn-primary" href="SignIn.html" role="button">SignUp</a>
+    </form>
+ </nav>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(i) no-repeat">
+   <h1>book now</h1>
+</div>
+
+<!-- booking section starts  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">book your trip!</h1>
+
+   <form action="book_form.php" method="post" class="book-form">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>name :</span>
+            <input type="text" placeholder="enter your name" name="name">
+         </div>
+         <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+         </div>
+         <div class="inputBox">
+            <span>phone :</span>
+            <input type="number" placeholder="enter your number" name="phone">
+         </div>
+         <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="enter your address" name="address">
+         </div>
+         <div class="inputBox">
+            <span>where to :</span>
+            <input type="text" placeholder="place you want to visit" name="location">
+         </div>
+         <div class="inputBox">
+            <span>how many :</span>
+            <input type="number" placeholder="number of guests" name="guests">
+         </div>
+         <div class="inputBox">
+            <span>arrivals :</span>
+            <input type="date" name="arrivals">
+         </div>
+         <div class="inputBox">
+            <span>leaving :</span>
+            <input type="date" name="leaving">
+         </div>
+      </div>
+
+      <input type="submit" value="submit" class="btn" name="send">
+
+   </form>
+
+</section>
+
+<!-- booking section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script1.js"></script>
+
+</body>
+</html>
